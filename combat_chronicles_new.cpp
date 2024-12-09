@@ -144,9 +144,9 @@ void initializePlayer(Player& player)
         }
     }
     player.experiencePoints = 0;
-        player.level = 1;
-        player.health = 100;
-        player.levelMax = 5;
+    player.level = 1;
+    player.health = 100;
+    player.levelMax = 5;
 }
 
 void EnemyInfo(Player& player, Enemy& enemy)
@@ -596,7 +596,7 @@ jump:
                 choice = lowerString(choice);
             } while (choice != "y");
 
-            main;
+            main();
             break;
             
         }
