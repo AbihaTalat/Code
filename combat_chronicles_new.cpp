@@ -94,7 +94,7 @@ void Quit()
 
 void initializePlayer(Player& player)
 {
-    cout << "\n\n" << setw(60) << " CREATING PLAYER " << endl << endl << endl;
+    cout << "\n\n" << setw(70) << " =< CREATING PLAYER >= " << endl << endl << endl;
     cout << "Player Name: ";
 
     while(true)
@@ -122,9 +122,9 @@ void initializePlayer(Player& player)
 
     while (true)
     {
-        cout << endl << setw(55) << " CLASSES ";
+        cout << endl << setw(65) << " =< CLASSES >= ";
         cout << "\n\n* SKY HUNTER\n\n* EMBER KNIGHT\n\n* RUNE SAGE " << endl;
-        cout << endl << setw(55) << " DESCRIPTION ";
+        cout << endl << setw(67) << " =< DESCRIPTION >= ";
         cout << "\n\n* SKY HUNTER : Aerial Precision\n\n* EMBER KNIGHT : Fiery Warrior\n\n* RUNE SAGE : Mystical Scholar" << endl;
         cout << endl;
         cout << "\nChoose your class: ";
@@ -239,7 +239,7 @@ void EnemyInfo(Player& player, Enemy& enemy)
 
 void displayPlayerInfo(Player& player)
 {
-    cout << setw(65) << " Character Information\n\n";
+    cout << setw(65) << "~< Character Information >~\n\n";
     cout << "Name:  " << player.name << endl;
     cout << "Class:  " << player.playerClass << endl;
     cout << "Health:  " << player.health << endl;
@@ -248,7 +248,7 @@ void displayPlayerInfo(Player& player)
     {
         player.level = 5;
     }
-    cout << "Level: " << player.level << "\n\n";
+    cout << "== Level: " << player.level << " ==" << "\n\n";
 }
 
 string Weapon(Player& player)
@@ -292,11 +292,15 @@ void inventory(Player& player)
     player.inventory[2] = " Thundersong Bow";
     player.inventory[3] = " Flame Sword";
     player.inventory[4] = " Phoenix Blade";
-    cout << "1. Crimson Petal Lance" << setw(40) << "at Level : 1" << endl;
-    cout << "2. Light Wind Blade" << setw(40) << "   at Level : 2" << endl;
-    cout << "3. Thundersong Bow" << setw(40) << "    at Level : 3" << endl;
-    cout << "4. Flame Sword" << setw(40) << "        at Level : 4" << endl;
-    cout << "5. Phoenix Blade" << setw(40) << "      at Level : 5" << endl;
+    cout << endl;
+    cout << setw(35) << "=<>= Explore Your Vault =<>=" << endl;
+    cout << endl;
+    cout << " 1. Crimson Petal Lance" << setw(20) << "at Level : 1" << endl;
+    cout << " 2. Light Wind Blade" << setw(23) << "   at Level : 2" << endl;
+    cout << " 3. Thundersong Bow" << setw(24) << "    at Level : 3" << endl;
+    cout << " 4. Flame Sword" << setw(28) << "        at Level : 4" << endl;
+    cout << " 5. Phoenix Blade" << setw(26) << "      at Level : 5" << endl;
+    cout << endl;
 }
 
 int levelUp(Player& player)
@@ -503,58 +507,60 @@ void gameLoop(Player& player, Enemy& enemy)
 }
 void Controls()
 {
-    cout << setw(50) << "* Channel Your Fury *" << endl << endl;
-    cout << "Press 1 to knock 3 points off their health!" << endl;
-    cout << "Press 2 to knock 6 points off their health!" << endl;
-    cout << "Press 3 to knock 9 points off their health!" << endl;
-    cout << "Press 4 to knock 12 points off their health!" << endl;
-    cout << "Press 5 to knock 15 points off their health!" << endl;
-    cout << "Press 6 to knock 18 points off their health!" << endl;
-    cout << "Press 7 to knock 21 points off their health!" << endl;
-    cout << "Press 8 to knock 24 points off their health!" << endl;
-    cout << "Press 9 to knock 27 points off their health!" << endl;
-    cout << "Press 10 to knock 30 points off their health!" << endl;
+    cout << endl;
+    cout << setw(35) << "=<>= Channel Your Fury =<>=" << endl << endl;
+    cout << " Press 1 to knock 3 points off their health!" << endl;
+    cout << " Press 2 to knock 6 points off their health!" << endl;
+    cout << " Press 3 to knock 9 points off their health!" << endl;
+    cout << " Press 4 to knock 12 points off their health!" << endl;
+    cout << " Press 5 to knock 15 points off their health!" << endl;
+    cout << " Press 6 to knock 18 points off their health!" << endl;
+    cout << " Press 7 to knock 21 points off their health!" << endl;
+    cout << " Press 8 to knock 24 points off their health!" << endl;
+    cout << " Press 9 to knock 27 points off their health!" << endl;
+    cout << " Press 10 to knock 30 points off their health!" << endl;
+    cout << endl;
 }
 
 void StoryLine(Player& player)
 {
     cout << endl << endl << setw(70) << "Combat Chronicles: The Battle Begins" << endl << endl << endl;
-    cout << "In the heat of battle, heroes are made, and legends are written." << endl;
-    cout << "Welcome to the Combat Chronicles, where the story of your might and courage unfolds..." << endl << endl;
+    cout << " In the heat of battle, heroes are made, and legends are written." << endl;
+    cout << " Welcome to the Combat Chronicles, where the story of your might and courage unfolds..." << endl << endl;
     
     Sleep(3000);
 
-    cout << "Level 1 - Echoes of the Forgotten Path:" << endl;
-    cout << "The TWILIGHT SERPENT slithers in the murky depths, its venomous strike a silent threat in the dark." << endl;
-    cout << "Face it now to prove your strength in the first trial of your journey..." << endl << endl;
+    cout << " Level 1 - Echoes of the Forgotten Path:" << endl;
+    cout << " The TWILIGHT SERPENT slithers in the murky depths, its venomous strike a silent threat in the dark." << endl;
+    cout << " Face it now to prove your strength in the first trial of your journey..." << endl << endl;
 
     Sleep(3000);
 
-    cout << "Level 2 - Storms of the Horizon:" << endl;
-    cout << "A creature born from thr storm, the THUNDER BEAST roars with the fury of the sky itself." << endl;
-    cout << "Its lightning-infused strikes will test your resilience as you venture deeper into the unknown..." << endl << endl;
+    cout << " Level 2 - Storms of the Horizon:" << endl;
+    cout << " A creature born from thr storm, the THUNDER BEAST roars with the fury of the sky itself." << endl;
+    cout << " Its lightning-infused strikes will test your resilience as you venture deeper into the unknown..." << endl << endl;
 
     Sleep(3000);
 
-    cout << "Level 3 - Veil of Shadows:" << endl;
-    cout << "Once a revered scholar, the BLOODVEIL SORCERER now commands dark, forbidden magic." << endl;
-    cout << "Defeat him and you may unlock the secrets of the arcane powers he has embraced..." << endl << endl;
+    cout << " Level 3 - Veil of Shadows:" << endl;
+    cout << " Once a revered scholar, the BLOODVEIL SORCERER now commands dark, forbidden magic." << endl;
+    cout << " Defeat him and you may unlock the secrets of the arcane powers he has embraced..." << endl << endl;
 
     Sleep(3000);
 
-    cout << "Level 4 - Beyond the Rift:" << endl;
-    cout << "Emerging from the rift between the worlds, the VOID PHANTOM is a wraith of forgotten souls." << endl;
-    cout << "Only the bravest dare face it, for its power comes from the very fabric of reality itself..." <<endl << endl;
+    cout << " Level 4 - Beyond the Rift:" << endl;
+    cout << " Emerging from the rift between the worlds, the VOID PHANTOM is a wraith of forgotten souls." << endl;
+    cout << " Only the bravest dare face it, for its power comes from the very fabric of reality itself..." <<endl << endl;
 
     Sleep(3000);
 
-    cout << "Final Showdown - The Edge of Fate:" << endl;
-    cout << "A master of stealth and assassination, the SHADOWSTRIKE RAIDER is the final obstacle of your path." << endl;
-    cout << "Survive its ambush, and you will prove yourself worthy of becoming a legend..." << endl << endl;
+    cout << " Final Showdown - The Edge of Fate:" << endl;
+    cout << " A master of stealth and assassination, the SHADOWSTRIKE RAIDER is the final obstacle of your path." << endl;
+    cout << " Survive its ambush, and you will prove yourself worthy of becoming a legend..." << endl << endl;
 
     Sleep(3000);
 
-    cout << "Embark on this legendary journey, rewrite the Chronicles of Combat, and emerge as the hero of Valor!" << endl << endl;
+    cout << " Embark on this legendary journey, rewrite the Chronicles of Combat, and emerge as the hero of Valor!" << endl << endl;
 }
 
 void End(Player& player, Enemy& enemy)
@@ -574,11 +580,11 @@ int main()
     system("cls");
     cout << "\n\n\n\n";
     cout << setw(65) << "~ COMBAT CHRONICLES ~\n" << endl << endl;
-    cout << "1. Begin the Tale." << endl << endl;
-    cout << "2. Enter the Realm." << endl << endl;
-    cout << "3. Browse your Treasures." << endl << endl;
-    cout << "4. Manual." << endl << endl;
-    cout << "5. Escape the Journey." << endl << endl;
+    cout << " 1. Begin the Tale." << endl << endl;
+    cout << " 2. Enter the Realm." << endl << endl;
+    cout << " 3. Browse your Treasures." << endl << endl;
+    cout << " 4. Adventurer's Guide." << endl << endl;
+    cout << " 5. Escape the Journey." << endl << endl;
 
 jump:
     cin >> ch;
@@ -711,7 +717,7 @@ jump:
                                     string choice;
                                     do
                                     {
-                                        cout << "\nPress y to continue....";
+                                        cout << "\n Press y to continue.... ";
                                         cin >> choice;
                                         choice = input(choice);
                                         choice = lowerString(choice);
@@ -782,7 +788,7 @@ jump:
             string choice;
             do
             {
-                cout << " Press y to continue...";
+                cout << " Press y to continue... ";
                 cin >> choice;
                 choice = input(choice);
                 choice = lowerString(choice);
@@ -800,7 +806,7 @@ jump:
             string choice;
             do
             {
-                cout << " Press y to continue...";
+                cout << " Press y to continue... ";
                 cin >> choice;
                 choice = input(choice);
                 choice = lowerString(choice);
