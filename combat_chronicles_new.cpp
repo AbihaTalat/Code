@@ -384,6 +384,8 @@ int PlayerAttack(Player& player)
             else if (ch == "9")
             {
                 player.attack = 27; 
+                return player.attack;
+                true;
             }
             else if (ch == "0")
             {
@@ -501,16 +503,17 @@ void gameLoop(Player& player, Enemy& enemy)
 }
 void Controls()
 {
-    cout << "Channel your fury: press 1 to knock 3 points off their health!" << endl;
-    cout << "Channel your fury: press 2 to knock 6 points off their health!" << endl;
-    cout << "Channel your fury: press 3 to knock 9 points off their health!" << endl;
-    cout << "Channel your fury: press 4 to knock 12 points off their health!" << endl;
-    cout << "Channel your fury: press 5 to knock 15 points off their health!" << endl;
-    cout << "Channel your fury: press 6 to knock 18 points off their health!" << endl;
-    cout << "Channel your fury: press 7 to knock 21 points off their health!" << endl;
-    cout << "Channel your fury: press 8 to knock 24 points off their health!" << endl;
-    cout << "Channel your fury: press 9 to knock 27 points off their health!" << endl;
-    cout << "Channel your fury: press 10 to knock 30 points off their health!" << endl;
+    cout << setw(50) << "* Channel Your Fury *" << endl << endl;
+    cout << "Press 1 to knock 3 points off their health!" << endl;
+    cout << "Press 2 to knock 6 points off their health!" << endl;
+    cout << "Press 3 to knock 9 points off their health!" << endl;
+    cout << "Press 4 to knock 12 points off their health!" << endl;
+    cout << "Press 5 to knock 15 points off their health!" << endl;
+    cout << "Press 6 to knock 18 points off their health!" << endl;
+    cout << "Press 7 to knock 21 points off their health!" << endl;
+    cout << "Press 8 to knock 24 points off their health!" << endl;
+    cout << "Press 9 to knock 27 points off their health!" << endl;
+    cout << "Press 10 to knock 30 points off their health!" << endl;
 }
 
 void StoryLine(Player& player)
@@ -574,7 +577,7 @@ int main()
     cout << "1. Begin the Tale." << endl << endl;
     cout << "2. Enter the Realm." << endl << endl;
     cout << "3. Browse your Treasures." << endl << endl;
-    cout << "4. Tweak the Magic." << endl << endl;
+    cout << "4. Manual." << endl << endl;
     cout << "5. Escape the Journey." << endl << endl;
 
 jump:
