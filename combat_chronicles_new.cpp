@@ -76,11 +76,11 @@ string input(string x)
 {
     while(true)
     {
-        if ( cin.fail())
+        if (cin.fail())
         {
             cin.clear();
         }
-        else if ( !cin.fail())
+        else if ( !cin.fail() )
         {
             return x;
         }
@@ -308,23 +308,28 @@ int levelUp(Player& player)
     if (player.experiencePoints >= 100)
     {
         player.level++;
-        if (player.level == 5)
-        {
-            player.level = player.levelMax;
-        }
-        player.health = 100; //Resets health on level up
-        player.experiencePoints = 0; // Reset experience points
+        
         if (player.level > player.levelMax)
         {
-            Sleep(2000);
-            cout << "The SHADOWSTRIKE RAIDER, the ultimate test of skill and perseverance, has been defeated. But with victory comes the realization: the trials were all leading to this moment. The adventurer, now empowered by the wisdom and strength gained, must confront the ancient evils in the stirring in the shadows, alone, with the fate of the realm resting in their hands.  " << endl << endl;
+            player.level == player.levelMax;
         }
-        else 
+        player.health = 100;
+        player.experiencePoints = 0;
+
+        if (player.level == player.levelMax)
         {
-            cout << "\nWelldone, brave adventurer ! You have ascended to Level : " << player.level << "." << " The realm trembles at your rise !" << endl;
-            return player.level;
+            Sleep(2000)
+            {
+                cout cout << "The SHADOWSTRIKE RAIDER, the ultimate test of skill and perseverance, has been defeated. But with victory comes the realization: the trials were all leading to this moment. The adventurer, now empowered by the wisdom and strength gained, must confront the ancient evils in the stirring in the shadows, alone, with the fate of the realm resting in their hands. " << endl << endl;
+            }
         }
+        else
+        {
+            cout << "\nWelldone, brave adventurer! You have ascended to Level : " << player.level << ". The realm trembles at your rise!" << endl;
+        }
+        return player.level;
     }
+    return player.level;
 }
 
 int PlayerAttack(Player& player)
@@ -708,7 +713,7 @@ jump:
                                 }
                                 else
                                 {
-                                    cout << " Invalid Input !" << endl;
+                                    cout << " Invalid Input ! " << endl;
                                     goto choice;
                                 }
                             }
