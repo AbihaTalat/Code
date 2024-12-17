@@ -318,7 +318,7 @@ int levelUp(Player& player)
 
         if (player.level == player.levelMax)
         {
-            Sleep(2000)
+            Sleep(2000);
             {
                 cout cout << "The SHADOWSTRIKE RAIDER, the ultimate test of skill and perseverance, has been defeated. But with victory comes the realization: the trials were all leading to this moment. The adventurer, now empowered by the wisdom and strength gained, must confront the ancient evils in the stirring in the shadows, alone, with the fate of the realm resting in their hands. " << endl << endl;
             }
