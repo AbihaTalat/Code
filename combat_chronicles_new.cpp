@@ -305,31 +305,26 @@ void inventory(Player& player)
 
 int levelUp(Player& player)
 {
-    if (player.experiencePoints >= 100)
-    {
-        player.level++;
-        
-        if (player.level > player.levelMax)
-        {
-            player.level == player.levelMax;
-        }
-        player.health = 100;
-        player.experiencePoints = 0;
-
-        if (player.level == player.levelMax)
-        {
-            Sleep(2000);
-            {
-                cout cout << "The SHADOWSTRIKE RAIDER, the ultimate test of skill and perseverance, has been defeated. But with victory comes the realization: the trials were all leading to this moment. The adventurer, now empowered by the wisdom and strength gained, must confront the ancient evils in the stirring in the shadows, alone, with the fate of the realm resting in their hands. " << endl << endl;
-            }
-        }
-        else
-        {
-            cout << "\nWelldone, brave adventurer! You have ascended to Level : " << player.level << ". The realm trembles at your rise!" << endl;
-        }
+   if (player.experiencePoints >= 100)
+   {
+      player.level++;
+      if (player.level == 5)
+      {
+         player.level = player.levelMax;
+      }
+      player.health = 100;
+      player.experiencePoints = 0;
+      if (player.level > player.levelMax)
+      {
+        Sleep(2000);
+        cout << "The SHADOWSTRIKE RAIDER, the ultimate test of skill and perseverance, has been defeated. But with victory comes the realization: the trials were all leading to this moment. The adventurer, now empowered by the wisdom and strength gained, must confront the ancient evils in the stirring in the shadows, alone, with the fate of the realm resting in their hands. " << endl << endl;
+      }
+      else
+      {
+        cout << "\nWelldone, brave adventurer! You have ascended to Level : " << player.level << ". The realm trembles at your rise! " << endl;
         return player.level;
-    }
-    return player.level;
+      }
+   }
 }
 
 int PlayerAttack(Player& player)
