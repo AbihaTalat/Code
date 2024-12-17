@@ -520,6 +520,9 @@ void Controls()
     cout << " Press 9 to knock 27 points off their health!" << endl;
     cout << " Press 10 to knock 30 points off their health!" << endl;
     cout << endl;
+    cout << " Press ( 1 to 9 ) for bodyshoot !" << endl;
+    cout << " Press ( 0 ) for headshoot ! " << endl;
+    cout << endl;
 }
 
 void StoryLine(Player& player)
